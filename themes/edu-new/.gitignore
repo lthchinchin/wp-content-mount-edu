@@ -1,0 +1,4 @@
+ai1wm-backups/
+node_modules
+# assets/css/*
+uglify

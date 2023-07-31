@@ -1,0 +1,19 @@
+{
+  "name": "html-thep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-sass assets/sass/style.scss assets/css/style.css -w", 
+    "devjs": "uglifyjs assets/js/main.js -o assets/jsdeploy/main.js -m --compress --toplevel",
+    "devformjs": "uglifyjs assets/js/vote-form.js -o assets/jsdeploy/vote-form.js -m --compress --toplevel",
+    "devadmin": "node-sass assets/sass/lp-admin-style.scss assets/css/lp-admin-style.css -w",
+    "build": "node-sass assets/sass/style.scss assets/css/style.css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "uglify-js": "^3.17.4"
+  }
+}

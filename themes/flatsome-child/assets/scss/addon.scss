@@ -1,0 +1,143 @@
+$main-color : #c72528;
+$sub-color : #444c59;
+
+// @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    color: $sub-color !important;
+}
+body{
+    p,a,ul,ol,li,div{
+        font-family: 'Open Sans', sans-serif !important;
+    }
+
+}
+
+.material-icons, material-icons-outlined, .material-icons-round { font-size: inherit; }
+
+@media (max-width: 768px) { 
+    h1{
+
+    }
+    h2{
+        font-size: 18px;
+    }
+}
+
+
+.main-co{
+    color: $main-color !important;
+}
+.second-co{
+    color: $sub-color !important;
+}
+.main-bg{
+    background-color: $main-color;
+}
+.second-bg{
+    background-color: $sub-color;
+}
+
+
+.row-solid .col:after {
+    border-bottom-style: none !important;
+}
+
+.underline {
+
+    .section-title{
+        position: relative;
+        padding: 12px;
+        // margin-bottom: 2rem;
+        // margin-top: 2rem;
+        
+        b{
+            background-color: unset;
+        }
+        
+        &:before {
+          display: block;
+          content: '';
+          width: 10px;
+          height: 10px;
+          background-color: $main-color;
+          position: absolute;
+          transform: rotate(45deg) translate(50%,50%);
+          left: 50%;
+          bottom: 0;
+        }
+        
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          max-width: 780px;
+          height: 1px;
+          background: 
+            linear-gradient(to right,
+              $main-color 0%,
+              $main-color 45%,
+              rgba(0,0,0,0) 45%,
+              rgba(0,0,0,0) 55%,
+              $main-color 55%,
+              $main-color 100%);
+        }
+    }
+   
+}
+
+div.product{
+.box-image{
+    // border: 5px solid #946E4A;
+    border-bottom: 0;
+}
+.box-text{
+    background-color: $main-color;
+    text-align: center;
+    .title-wrapper{
+        font-size: 16px;
+        a{
+            color: #fff;
+        }
+    }
+}
+}
+
+// add class css
+
+.partners-list{
+    .col{
+        padding-bottom: 0;
+    }
+}
+
+.home-blog-sect{
+    .post-item{
+        .post-title{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; /* number of lines to show */
+                    line-clamp: 1; 
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+
+.ft-contact{
+    list-style: none;
+    li{
+        margin: 0 !important;
+    }
+}
+
+.button{
+    margin-bottom: 0 !important;
+}
+
+@import "update-ic.scss";

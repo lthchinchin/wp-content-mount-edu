@@ -1,0 +1,5 @@
+<?php
+/* template part */
+include(locate_template('templates/block/footer/footer-main.php'));
+get_template_part('templates/block/desktop/navbar', 'desktop');
+get_template_part('templates/pages/desktop/home/section', 'benefit', array('pageid' =>$pageid) );

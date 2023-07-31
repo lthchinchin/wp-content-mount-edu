@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  color: #444c59 !important; }
+
+body p, body a, body ul, body ol, body li, body div {
+  font-family: 'Open Sans', sans-serif !important; }
+
+.material-icons, material-icons-outlined, .material-icons-round {
+  font-size: inherit; }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 18px; } }
+
+.main-co {
+  color: #c72528 !important; }
+
+.second-co {
+  color: #444c59 !important; }
+
+.main-bg {
+  background-color: #c72528; }
+
+.second-bg {
+  background-color: #444c59; }
+
+.row-solid .col:after {
+  border-bottom-style: none !important; }
+
+.underline .section-title {
+  position: relative;
+  padding: 12px; }
+  .underline .section-title b {
+    background-color: unset; }
+  .underline .section-title:before {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #c72528;
+    position: absolute;
+    transform: rotate(45deg) translate(50%, 50%);
+    left: 50%;
+    bottom: 0; }
+  .underline .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 780px;
+    height: 1px;
+    background: linear-gradient(to right, #c72528 0%, #c72528 45%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0) 55%, #c72528 55%, #c72528 100%); }
+
+div.product .box-image {
+  border-bottom: 0; }
+
+div.product .box-text {
+  background-color: #c72528;
+  text-align: center; }
+  div.product .box-text .title-wrapper {
+    font-size: 16px; }
+    div.product .box-text .title-wrapper a {
+      color: #fff; }
+
+.partners-list .col {
+  padding-bottom: 0; }
+
+.home-blog-sect .post-item .post-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical; }
+
+.ft-contact {
+  list-style: none; }
+  .ft-contact li {
+    margin: 0 !important; }
+
+.button {
+  margin-bottom: 0 !important; }
+
+.header .icon-search:before {
+  content: "\e8b6";
+  font-family: 'Material Icons' !important;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }

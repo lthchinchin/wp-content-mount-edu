@@ -1,0 +1,17 @@
+.header .icon-search:before {
+    // content: "\e8b6";
+    // font-family: 'Material Icons', sans-serif;
+    content: "\e8b6";
+    font-family: 'Material Icons' !important;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
